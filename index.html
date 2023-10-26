@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Week 1 -->
+    <!-- Header section -->
+    <header id="header">
+        <!-- Navigation -->
+        <div class="container">
+            <nav class="flex">
+                <div class="nav-ele flex justify-between">
+                    <div class="logo">
+                        <img src="images/scaler.png" height="50" width="50" alt="scaler-logo"/>
+                    </div>
+                    <div>
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Blog</a>
+                    </div>
+                </div>
+            </nav>  
+        </div>
+        
+        <!-- Necessary Details -->
+        <div class="detail flex items-center justify-between">
+            <div class="left justify-center">
+                <img src="./images/profileImg.png" alt="Profile1">
+            </div>
+            <div class="right">
+                <h2>Swati Pradhan</h2>
+                <h1>I'm a Frontend <br> <span>Developer</span></h1>
+                <p>Description:<p>
+                <div>
+                    <button>DOWNLOAD RESUME</button>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <hr>
+    <!-- About Me section -->
+    <section class="about" id="about">
+        <!-- Profile Image -->
+        <div class="container flex items-center">
+            <div class="left">
+                <img src="./images/profileImg2.png" alt="Profile2" width="400px">
+            </div>
+            <!-- Intro, Description and Links -->
+            <div class="right">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello! I'm Swati Pradhan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci distinctio obcaecati aliquid, quia tempora quis optio repudiandae officia earum? Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <!-- Links to social profiles along with logos -->
+                <div class="social-link flex">
+                    <a href=""><img src="./images/linkedIn.png" alt="Logo1" width="40" height="40"></a>
+                    <a href=""><img src="./images/github.png" alt="Logo2" width="40" height="40"></a>
+                    <a href=""><img src="./images/leetcoe.png" alt="Logo3" width="40" height="40"></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <hr>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1 class="projects-head">My Projects</h1>
+            <p>I mostly work with HTML, CSS, JavaScript</p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="./images/calculator.jpeg" alt="Project1" width="50px" height="50px">
+                    <h2>Calculator</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+                </div>
+                <div class="card">
+                    <img src="./images/cart.png" alt="Project2" width="50px" height="50px">
+                    <h2>Cart</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+                </div>
+                <div class="card">
+                    <img src="./images/todolist.png" alt="Project3" width="50px" height="50px">
+                    <h2>Todo List</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Week 2 -->
+    <!-- Get in Touch form section -->
+    <section class="contact-section" id="contacts">
+        <h1>Get in Touch</h1>
+        <form id="contact" class="contact-form">
+            <label>
+                <span>Name</span>
+                <input class="inputBox" type="text" name="name" placeholder="Name">
+            </label>
+            <label>
+                <span>Email</span>
+                <input class="inputBox" type="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                <span>Message</span>
+                <textarea class="inputBox" name="message" placeholder="Message"></textarea>
+            </label>
+            <input class="inputBox" id="submit_button" name="submit" type="submit" value="Send" />
+        </form>
+    </section>
+</body>
+
+</html>

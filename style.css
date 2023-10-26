@@ -1,0 +1,234 @@
+@import "utility.css";
+:root{
+    --primary:#5da9e9;
+    --secondary:#808080;
+    --white:#ffffff;
+    --bgDark:#0c0c0c;
+    --borderCol:#d2d2d2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header nav styling */
+
+header{
+    background-color: var(--bgDark);
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .nav-ele a{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    transition: all 0.25s ease;
+}
+
+header nav .nav-ele a:hover{
+    color: var(--primary);
+    
+}
+header nav{
+    padding: 2rem 0;
+    margin-left: 10rem;
+}
+header nav .logo{
+    margin-top: -1rem;
+    margin-right: 1rem;
+}
+
+/* header details styling */
+
+.detail{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    gap: 0.25rem;
+}
+.detail .left img{
+    margin-left: 10rem;
+    border: 2px solid var(--borderCol);
+    border-radius: 5rem;
+    width: 400px;
+}
+
+.detail .right{
+    color: var(--white);
+    margin: 0 auto;
+   
+}
+
+.detail .right h2{
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.detail .right h1{
+    font-size: 4rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    font-weight: 50;
+    
+}
+.detail .right h1 span{
+    color: var(--primary);
+}
+.detail .right p{
+    line-height: 3;
+    margin-bottom: 2rem;
+}
+
+.detail .right button{
+    border: 3px solid var(--primary);
+    padding: 0.5rem 2rem;
+    color: var(--primary);
+    background-color: var(--bgDark);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    border-radius: 5px;
+    
+    
+}
+.detail .right button:hover{
+    color: var(--bgDark);
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+/* about me section styling */
+
+section{
+    padding: 4rem;
+}
+section.about .left{
+    margin: 0 5rem;
+}
+section.about .right{
+    margin: 0 5rem;
+}
+
+section.about .right h1{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+section.about .right h1 span{
+    color:var(--primary);
+}
+
+section.about .right h3{
+    margin-bottom:0.5rem;
+}
+
+section.about .right p{
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+section.about .right .social-link a{
+    margin-right: 1rem;
+}
+
+/* project section styling */
+section.projects {
+    background-color: var(--bgDark);
+    padding: 4rem 2rem;
+    
+}
+section.projects .projects-head{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+section.projects .projects-head+p{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+section.projects .card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 3;
+    
+}
+
+section.projects .card-grid .card{
+    background-color: var(--white);
+    text-align: center;
+    margin: 1rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+section.projects .card-grid .card img{
+    background-color: var(--white);
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+section.projects .card-grid .card h2{
+    color: var(--primary);
+    
+}
+
+section.projects .card-grid .card p{
+    line-height: 2;
+}
+
+section.projects .card-grid .card:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+section.projects .card-grid .card:hover h2{
+    color: var(--white);
+}
+
+section.projects .card-grid .card:hover p{
+    color: var(--white);
+}
+
+/* section contact section styling */
+
+section.contact-section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.contact-section h1{
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+section.contact-section .inputBox{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid var(--borderCol);
+    
+}
+
+section.contact-section .contact-form span{
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+#submit_button{
+    background-color: var(--primary);
+    font-size: 1rem;
+}
